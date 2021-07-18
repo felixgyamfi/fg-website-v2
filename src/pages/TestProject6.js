@@ -6,18 +6,20 @@ const Wrapper = styled.div`
   overflow-y: auto;
   width: 100vw;
   height: 100vh;
-  background-color: lightpink;
+  top: 2000px;
+  left: 6000px;
+  background-color: lightblue;
   padding: 50px;
 `
 
-function TestProject2() {
+function TestProject6() {
   return (
-    <div className="Project1">
-      <Wrapper id="P1">
-        <h1>Project1</h1>
+    <div className="Test6">
+      <Wrapper id="Test6">
+        <h1>Test6</h1>
       </Wrapper>
     </div>
   )
 }
 
-export default TestProject2
+export default TestProject6

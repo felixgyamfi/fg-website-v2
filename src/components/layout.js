@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
-import Nav from "./Nav/Nav"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,15 +22,7 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
         }}
       >
-        <Nav />
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Felix Gyamfi
-        </footer>
       </div>
     </>
   )

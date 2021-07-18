@@ -25,6 +25,13 @@ export const NavLinks = styled.ul`
   }
 `
 
+export const NavLink = styled.button`
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  cursor: pointer;
+`
+
 function Navigation() {
   return (
     <Wrapper>
@@ -32,16 +39,22 @@ function Navigation() {
         <h3>Navigation</h3>
         <NavLinks>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink onClick={() => scrollTo("#P1")}>P1</NavLink>
           </li>
           <li>
-            <button onClick={() => scrollTo("#Test1")}>Test4</button>
+            <NavLink onClick={() => scrollTo("#Test1")}>Home</NavLink>
           </li>
           <li>
-            <button onClick={() => scrollTo("#Test2")}>Test5</button>
+            <NavLink onClick={() => scrollTo("#Test3")}>Test3</NavLink>
           </li>
           <li>
-            <button onClick={() => scrollTo("#Test3")}>Test6</button>
+            <NavLink onClick={() => scrollTo("#Test4")}>Test4</NavLink>
+          </li>
+          <li>
+            <NavLink onClick={() => scrollTo("#Test5")}>Test5</NavLink>
+          </li>
+          <li>
+            <NavLink onClick={() => scrollTo("#Test6")}>Test6</NavLink>
           </li>
         </NavLinks>
       </Nav>
