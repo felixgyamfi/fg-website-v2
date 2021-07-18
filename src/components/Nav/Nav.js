@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { HashLink } from "react-router-hash-link"
+
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 export const Wrapper = styled.div`
   height: 50px;
@@ -24,8 +25,6 @@ export const NavLinks = styled.ul`
   }
 `
 
-export const StyledLink = styled(Link)``
-
 function Navigation() {
   return (
     <Wrapper>
@@ -33,18 +32,16 @@ function Navigation() {
         <h3>Navigation</h3>
         <NavLinks>
           <li>
-            <StyledLink smooth to="/TestProject1">
-              Test1
-            </StyledLink>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <StyledLink to="/TestProject2">Test2</StyledLink>
+            <button onClick={() => scrollTo("#Test1")}>Test4</button>
           </li>
           <li>
-            <StyledLink to="/TestProject3">Test3</StyledLink>
+            <button onClick={() => scrollTo("#Test2")}>Test5</button>
           </li>
           <li>
-            <StyledLink to="/">Home</StyledLink>
+            <button onClick={() => scrollTo("#Test3")}>Test6</button>
           </li>
         </NavLinks>
       </Nav>
