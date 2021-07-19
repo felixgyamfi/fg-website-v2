@@ -20,7 +20,14 @@ const Layout = ({ children }) => {
     <>
       <div>Test</div>
       <main>{children}</main>
-      <footer>
+      <footer
+        style={{
+          marginTop: `2rem`,
+          bottom: `0px`,
+          position: `absolute`,
+          width: `100%`,
+        }}
+      >
         © {new Date().getFullYear()}, Felix Gyamfi
         {` `}
       </footer>

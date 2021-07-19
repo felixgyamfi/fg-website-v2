@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: absolute;
   overflow-y: none;
   width: 100vw;
@@ -22,7 +21,7 @@ export const ProjectInfo = styled.h1`
 export const ProjectData = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 213px;
+  margin-top: 17vh;
 `
 export const ProjectTitle = styled.h2`
   font-size: 24px;
@@ -38,7 +37,7 @@ export const ProjectIndex = styled.p`
   -webkit-text-stroke: 1.5px black;
 `
 export const LetterDecoration = styled.p`
-  margin-top: 50%;
+  margin-top: 25vh;
   position: absolute;
   left: 30%;
   font-size: 600px;
@@ -49,6 +48,9 @@ export const ScrollBoxWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: 10;
+  height: 100%;
+  justify-content: flex-end;
 `
 export const ScrollBox = styled.div`
   margin-bottom: 35px;
@@ -68,4 +70,5 @@ export const Arrow = styled(Link)`
 export const ProjectDataWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  z-index: 20;
 `
