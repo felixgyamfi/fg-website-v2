@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 
 import Nav from "../components/Nav/Nav"
 
-import TestProject1 from "./LandingPage"
+import TestProject1 from "./LandingPage/LandingPage"
 import TestProject2 from "./TestProject2"
 import TestProject3 from "./TestProject3"
 import TestProject4 from "./TestProject4"
