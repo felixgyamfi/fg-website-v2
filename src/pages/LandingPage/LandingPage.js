@@ -7,6 +7,7 @@ import {
   TitleHead,
   TitleText,
   ArrowButton,
+  ArrowButtons,
 } from "./landingPageElements"
 
 function TestProject1() {
@@ -17,8 +18,10 @@ function TestProject1() {
           <TitleHead>Felix Gyamfi</TitleHead>
           <TitleText>is a photographer based in Kiel, Germany</TitleText>
         </TitleWrapper>
-        <ArrowButton>→</ArrowButton>
-        <ArrowButton>←</ArrowButton>
+        <ArrowButtons>
+          <ArrowButton className="right">←</ArrowButton>
+          <ArrowButton className="left">→</ArrowButton>
+        </ArrowButtons>
         <ImageStack />
       </Wrapper>
     </div>

@@ -12,8 +12,8 @@ export const StackItemTop = styled.div`
 `
 
 export const StackItemBottom = styled.div`
-  grid-column: 1 / span 8;
-  padding-top: 20%; // slightly arbitrary, keeps proportion once resized
+  grid-column: 1 / span 6;
+  padding-top: 80%; // slightly arbitrary, keeps proportion once resized
   grid-row: 1;
 `
 
