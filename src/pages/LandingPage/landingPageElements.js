@@ -8,17 +8,11 @@ export const Wrapper = styled.div`
   top: 1000px;
   left: 2000px;
   background-color: rgba(223, 221, 217, 1);
+  padding-top: 40px;
 `
 export const TitleWrapper = styled.div`
   max-width: 350px;
   padding: 50px 33px 0;
-`
-
-export const TitleHead = styled.h1`
-  font-size: 36px;
-  line-height: 43px;
-  font-weight: 500;
-  margin-bottom: 0;
 `
 
 export const TitleText = styled.p`

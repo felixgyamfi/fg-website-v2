@@ -7,7 +7,6 @@ function Navigation() {
   return (
     <Wrapper>
       <Nav className="Nav">
-        <h3>Navigation</h3>
         <NavLinks>
           <li>
             <NavLink onClick={() => scrollTo("#P1")}>P1</NavLink>
