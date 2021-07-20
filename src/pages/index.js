@@ -19,7 +19,7 @@ export const TitleHead = styled.h1`
   line-height: 43px;
   font-weight: 500;
   margin-bottom: 0;
-  padding: 50px 33px 0;
+  padding: 20px 33px 0;
 `
 export const StyledLink = styled(Link)`
   text-decoration: none;

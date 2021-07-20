@@ -9,19 +9,19 @@ export const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: lightpink;
-  padding: 90px 33px 0;
+  padding: 0px 33px 0;
 `
 export const ProjectInfo = styled.h1`
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.1em;
-  margin-top: 8px;
+  margin-top: 70px;
   text-transform: uppercase;
 `
 export const ProjectData = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 17vh;
+  margin-top: 10vh;
 `
 export const ProjectTitle = styled.h2`
   font-size: 24px;
@@ -37,8 +37,9 @@ export const ProjectIndex = styled.p`
   -webkit-text-stroke: 1.5px black;
 `
 export const LetterDecoration = styled.p`
-  margin-top: 25vh;
+  margin-top: 0vh;
   position: absolute;
+  line-height: 620px;
   left: 30%;
   font-size: 600px;
   font-weight: 900;
