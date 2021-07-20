@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../../components/layout"
-import styled from "styled-components"
 import {
   Wrapper,
   ProjectDataWrapper,
@@ -13,31 +12,7 @@ import {
   Arrow,
   LetterDecoration,
 } from "./ProjectTemplateElements"
-
-const ProjectImageGalleryWrapper = styled.div`
-  z-index: 1;
-`
-
-const ProjectImageGallery = styled.section`
-  height: 65vh;
-  width: 100vw;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(175, 184, 118, 0.9); ;
-`
-
-const ProjectImageWrapper = styled.div``
-
-function ImageGallery() {
-  return (
-    <ProjectImageGalleryWrapper>
-      <ProjectImageGallery>
-        <ProjectImageWrapper />
-      </ProjectImageGallery>
-    </ProjectImageGalleryWrapper>
-  )
-}
+import { ImageGallery } from "./ProjectImageGallery"
 
 function ProjectTemplate() {
   return (
