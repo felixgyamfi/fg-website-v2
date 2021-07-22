@@ -7,12 +7,10 @@ import {
   ProjectData,
   ProjectIndex,
   ProjectTitle,
-  ScrollBoxWrapper,
-  ScrollBox,
-  Arrow,
   LetterDecoration,
 } from "./ProjectTemplateElements"
 import { ImageGallery } from "./ProjectImageGallery"
+import ScrollBox from "../../components/ScrollBox/ScrollBox"
 
 function ProjectTemplate() {
   return (
@@ -27,13 +25,7 @@ function ProjectTemplate() {
               <ProjectTitle>Project title</ProjectTitle>
             </ProjectData>
           </ProjectDataWrapper>
-          <ScrollBoxWrapper className="ScrollBox">
-            <ScrollBox>
-              <Arrow className="left">←</Arrow>
-              <p>scroll</p>
-              <Arrow className="right">→</Arrow>
-            </ScrollBox>
-          </ScrollBoxWrapper>
+          <ScrollBox />
           <LetterDecoration>T</LetterDecoration>
         </Wrapper>
       </div>
