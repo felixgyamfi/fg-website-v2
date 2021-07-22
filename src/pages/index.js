@@ -3,7 +3,7 @@ import Seo from "../components/seo"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import Nav from "../components/Nav/Nav"
+import Nav from "../components/Nav copy 2/Nav"
 
 import LandingPage from "./LandingPage/LandingPage"
 import ProjectTemplate from "./ProjectTemplate"

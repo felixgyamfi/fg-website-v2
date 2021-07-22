@@ -1,0 +1,59 @@
+import React, { useState } from "react"
+
+import scrollTo from "gatsby-plugin-smoothscroll"
+import {
+  Wrapper,
+  Nav,
+  MenuBtn,
+  NavLinks,
+  NavLinksBG,
+  NavLink,
+} from "./NavElements"
+
+function Navigation() {
+  const [hide, setHide] = useState(true)
+
+  return (
+    <Wrapper>
+      <Nav className="Nav">
+        <MenuBtn onClick={() => setHide(!hide)}>menu</MenuBtn>
+        <NavLinksBG className={hide ? "hide" : ""}>
+          <NavLinks>
+            <li>
+              <div onClick={() => setHide(true)}>
+                <NavLink onClick={() => scrollTo("#P1")}>P1_</NavLink>
+              </div>
+            </li>
+            <li>
+              <div onClick={() => setHide(true)}>
+                <NavLink onClick={() => scrollTo("#Test1")}>Home_</NavLink>
+              </div>
+            </li>
+            <li>
+              <div onClick={() => setHide(true)}>
+                <NavLink onClick={() => scrollTo("#Test3")}>Test3_</NavLink>
+              </div>
+            </li>
+            <li>
+              <div onClick={() => setHide(true)}>
+                <NavLink onClick={() => scrollTo("#Test4")}>Test4_</NavLink>
+              </div>
+            </li>
+            <li>
+              <div onClick={() => setHide(true)}>
+                <NavLink onClick={() => scrollTo("#Test5")}>Test5_</NavLink>
+              </div>
+            </li>
+            <li>
+              <div onClick={() => setHide(true)}>
+                <NavLink onClick={() => scrollTo("#Test6")}>Test6_</NavLink>
+              </div>
+            </li>
+          </NavLinks>
+        </NavLinksBG>
+      </Nav>
+    </Wrapper>
+  )
+}
+
+export default Navigation
