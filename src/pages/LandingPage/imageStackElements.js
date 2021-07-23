@@ -17,4 +17,6 @@ export const StackItemBottom = styled.div`
   grid-row: 1;
 `
 
-export const Container = styled.div``
+export const Container = styled.div`
+  max-width: 750px;
+`

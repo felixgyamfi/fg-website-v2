@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
   overflow-y: none;
   width: 100vw;
   height: 100vh;
-  background-color: lightpink;
   padding: 0px 33px 0;
 `
 export const ProjectInfo = styled.h1`

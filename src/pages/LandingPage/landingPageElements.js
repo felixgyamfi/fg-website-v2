@@ -2,13 +2,16 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
   position: absolute;
-  overflow-y: auto;
+  overflow: visible;
   width: 100vw;
   height: 100vh;
   top: 1000px;
   left: 2000px;
   background-color: rgba(223, 221, 217, 1);
   padding-top: 40px;
+
+  .image-stack {
+  }
 `
 export const TitleWrapper = styled.div`
   max-width: 350px;

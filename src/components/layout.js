@@ -17,7 +17,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div>Test</div>
       <main>{children}</main>
       <footer
         style={{

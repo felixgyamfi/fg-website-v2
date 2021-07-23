@@ -17,13 +17,26 @@ const ProjectImageGallery = styled.ul`
   white-space: nowrap;
   list-style: none;
   width: auto;
-  height: 100%;
-  background-color: rgba(175, 184, 118, 0.9); ;
+  background-color: rgba(175, 184, 118, 0.9);
 `
 const ProjectImageWrapper = styled.li`
   text-align: center;
   float: left;
-  display: block;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+
+  .gallery-img {
+    object-fit: contain;
+  }
+  .gallery-img-wrap {
+    max-width: 80vw;
+    max-height: 60vh;
+    width: auto;
+  }
 `
 
 export function ImageGallery() {
@@ -32,26 +45,17 @@ export function ImageGallery() {
       <ProjectImageGallery>
         <ProjectImageWrapper>
           <StaticImage
-            src="../../assets/images/Simi_1-2.jpg"
-            alt=""
-            style={{
-              height: `auto`,
-              width: `80vw`,
-              objectFit: `scale-down`,
-            }}
+            src="../../assets/images/2Y4A4683.jpg"
+            imgClassName="gallery-img"
+            className="gallery-img-wrap"
           />
         </ProjectImageWrapper>
         <ProjectImageWrapper>
           <StaticImage
-            src="../../assets/images/feuer_1.jpg"
+            src="../../assets/images/2Y4A5218.jpg"
             alt=""
-            src="../../assets/images/Simi_1-2.jpg"
-            alt=""
-            style={{
-              height: `auto`,
-              width: `80vw`,
-              objectFit: `scale-down`,
-            }}
+            imgClassName="gallery-img"
+            className="gallery-img-wrap"
           />
         </ProjectImageWrapper>
       </ProjectImageGallery>

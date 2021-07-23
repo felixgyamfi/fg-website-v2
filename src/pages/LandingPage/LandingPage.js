@@ -20,7 +20,7 @@ function LandingPage() {
           <ArrowButton className="right">←</ArrowButton>
           <ArrowButton className="left">→</ArrowButton>
         </ArrowButtons>
-        <ImageStack />
+        <ImageStack className="image-stack" />
       </Wrapper>
     </div>
   )

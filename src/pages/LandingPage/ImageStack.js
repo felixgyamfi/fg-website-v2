@@ -10,7 +10,7 @@ import {
 
 function ImageStack() {
   return (
-    <Container>
+    <Container className="container">
       <Stack>
         <StackItemTop>
           <StaticImage src="../../assets/images/Simi_1-2.jpg" alt="Simi" />
