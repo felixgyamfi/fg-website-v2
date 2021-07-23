@@ -12,22 +12,20 @@ const ProjectImageGalleryWrapper = styled.div`
 const ProjectImageGallery = styled.ul`
   margin: 0;
   padding: 0;
-  float: left;
-  margin-right: -999em;
   white-space: nowrap;
   list-style: none;
   width: auto;
   background-color: rgba(175, 184, 118, 0.9);
 `
 const ProjectImageWrapper = styled.li`
-  text-align: center;
-  float: left;
+  overflow: visible;
   background: rgb(34, 193, 195);
   background: linear-gradient(
     90deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(253, 187, 45, 1) 100%
   );
+  display: inline-block;
 
   .gallery-img {
     object-fit: contain;

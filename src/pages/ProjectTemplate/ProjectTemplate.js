@@ -15,19 +15,19 @@ import ScrollBox from "../../components/ScrollBox/ScrollBox"
 function ProjectTemplate() {
   return (
     <Layout>
-      <div className="Project1">
-        <Wrapper id="P1">
-          <ImageGallery className="ImageGallery" />
-          <ProjectDataWrapper className="ProjectData">
+      <div className="Project1" id="P1">
+        <Wrapper>
+          <ProjectDataWrapper className="project-data">
             <ProjectInfo>Project Template</ProjectInfo>
             <ProjectData>
               <ProjectIndex>01</ProjectIndex>
               <ProjectTitle>Project title</ProjectTitle>
             </ProjectData>
           </ProjectDataWrapper>
+          <ImageGallery className="image-gallery" />
           <ScrollBox />
-          <LetterDecoration>T</LetterDecoration>
         </Wrapper>
+        <LetterDecoration>T</LetterDecoration>
       </div>
     </Layout>
   )

@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 export const Wrapper = styled.div`
   display: flex;
@@ -8,7 +7,6 @@ export const Wrapper = styled.div`
   overflow-y: none;
   width: 100vw;
   height: 100vh;
-  padding: 0px 33px 0;
 `
 export const ProjectInfo = styled.h1`
   font-size: 12px;
@@ -16,8 +14,10 @@ export const ProjectInfo = styled.h1`
   letter-spacing: 0.1em;
   margin-top: 70px;
   text-transform: uppercase;
+  padding: 0px 33px 0;
 `
 export const ProjectData = styled.div`
+  padding: 0px 33px 0;
   display: flex;
   flex-direction: column;
   margin-top: 10vh;
