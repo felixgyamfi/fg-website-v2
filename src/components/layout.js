@@ -24,8 +24,8 @@ const Layout = ({ children }) => {
           bottom: `0px`,
           position: `absolute`,
           width: `100%`,
-          padding: `0 33px`,
-          fontSize: `10px`,
+          padding: `0 3.3rem`,
+          fontSize: `1rem`,
         }}
       >
         © {new Date().getFullYear()}, Felix Gyamfi

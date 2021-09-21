@@ -1,9 +1,15 @@
 import styled from "styled-components"
 
 export const Stack = styled.div`
+  max-width: 75rem;
   display: grid;
   position: relative; // imperative for the overlapping to work
   grid-template-columns: repeat(12, 1fr);
+
+  @media screen and (min-width: 992px) {
+    max-width: unset;
+    height: 100vh;
+  }
 `
 export const StackItemTop = styled.div`
   grid-row: 1;
@@ -18,5 +24,9 @@ export const StackItemBottom = styled.div`
 `
 
 export const Container = styled.div`
-  max-width: 750px;
+  position: absolute;
+  @media screen and (min-width: 992px) {
+    margin-right: 10.7rem;
+    margin-left: 25vw;
+  }
 `

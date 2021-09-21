@@ -6,9 +6,9 @@ const Wrapper = styled.div`
   overflow-y: auto;
   width: 100vw;
   height: 100vh;
-  left: 6000px;
+  left: 600rem;
   background-color: lightsalmon;
-  padding: 50px;
+  padding: 5rem;
 `
 
 function TestProject4() {

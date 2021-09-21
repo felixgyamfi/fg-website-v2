@@ -8,6 +8,8 @@ import {
   NavLinks,
   NavLinksBG,
   NavLink,
+  Logo,
+  StyledLink,
 } from "./NavElements"
 
 function Navigation() {
@@ -16,6 +18,9 @@ function Navigation() {
   return (
     <Wrapper>
       <Nav className="Nav">
+        <StyledLink to="/">
+          <Logo>Felix Gyamfi</Logo>
+        </StyledLink>
         <MenuBtn onClick={() => setHide(!hide)}>menu</MenuBtn>
         <NavLinksBG className={hide ? "hide" : ""}>
           <NavLinks>

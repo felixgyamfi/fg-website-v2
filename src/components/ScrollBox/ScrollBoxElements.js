@@ -2,7 +2,10 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 export const ScrollBoxWrapper = styled.div`
+  z-index: 10;
   display: flex;
+  position: absolute;
+  width: 100%;
   flex-direction: column;
   align-items: flex-end;
   z-index: 10;
@@ -10,17 +13,18 @@ export const ScrollBoxWrapper = styled.div`
   justify-content: flex-end;
 `
 export const ScrollBox = styled.div`
-  margin-bottom: 35px;
-  margin-right: 45px;
+  margin-bottom: 3.5rem;
+  margin-right: 4.5rem;
   display: flex;
   align-items: center;
-  width: 150px;
+  width: 15rem;
   p {
     margin: auto 0;
     text-decoration: underline;
+    font-size: 1.8rem;
   }
 `
 export const Arrow = styled(Link)`
-  font-size: 36px;
-  margin: 10px 30px;
+  font-size: 3.6rem;
+  margin: 1rem 3rem;
 `

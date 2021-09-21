@@ -6,10 +6,10 @@ const Wrapper = styled.div`
   overflow-y: auto;
   width: 100vw;
   height: 100vh;
-  top: 2000px;
-  left: 6000px;
+  top: 200rem;
+  left: 600rem;
   background-color: lightblue;
-  padding: 50px;
+  padding: 5rem;
 `
 
 function TestProject6() {

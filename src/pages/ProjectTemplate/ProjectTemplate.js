@@ -20,11 +20,11 @@ function ProjectTemplate() {
           <ProjectDataWrapper className="project-data">
             <ProjectInfo>Project Template</ProjectInfo>
             <ProjectData>
-              <ProjectIndex>01</ProjectIndex>
+              <ProjectIndex>0{"\ue768"}</ProjectIndex>
               <ProjectTitle>Project title</ProjectTitle>
             </ProjectData>
           </ProjectDataWrapper>
-          <ImageGallery className="image-gallery" />
+          <ImageGallery className="image-gallery"></ImageGallery>
           <ScrollBox />
         </Wrapper>
         <LetterDecoration>T</LetterDecoration>

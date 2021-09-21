@@ -15,11 +15,11 @@ import TestProject6 from "./TestProject6"
 export const TitleHead = styled.h1`
   position: fixed;
   z-index: 998;
-  font-size: 36px;
-  line-height: 43px;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
   font-weight: 500;
   margin-bottom: 0;
-  padding: 20px 33px 0;
+  padding: 2rem 3.3rem 0;
 `
 export const StyledLink = styled(Link)`
   text-decoration: none;
@@ -29,9 +29,6 @@ export const StyledLink = styled(Link)`
 const IndexPage = () => (
   <>
     <Nav />
-    <StyledLink to="/">
-      <TitleHead>Felix Gyamfi</TitleHead>
-    </StyledLink>
     <Seo title="Felix Gyamfi" />
     <LandingPage>
       <Seo title="P1" />

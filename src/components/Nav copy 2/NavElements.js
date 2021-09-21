@@ -1,7 +1,8 @@
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 export const Wrapper = styled.div`
-  height: 50px;
+  height: auto;
   width: 100%;
   position: fixed;
   top: 0;
@@ -12,33 +13,41 @@ export const Wrapper = styled.div`
   }
 `
 export const Nav = styled.nav`
-  margin-left: 100px;
-  margin-top: 100px;
   max-width: 100vw;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding-right: 100px;
-  flex-direction: column;
+  flex-direction: row;
 `
 export const MenuBtn = styled.button`
-  text-decoration: underline;
+  border: none;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 2.7rem;
+  margin-right: 2rem;
+  border-bottom: 2.5px solid currentColor;
   transform: rotate(90deg);
   width: auto;
+  height: max-content;
   background: none !important;
-  border: none;
   padding: 0 !important;
   cursor: pointer;
+  font-size: 2.4rem;
+
+  @media screen and (min-width: 992px) {
+    transform: unset;
+    margin-top: 4.5rem;
+    margin-right: 6rem;
+  }
 `
 export const NavLinksBG = styled.div`
   width: 100vw;
   height: 100vh;
   position: absolute;
-  padding-right: 44px;
-  padding-top: 22px;
+  padding-right: 4.4rem;
+  padding-top: 2.2rem;
   top: 0;
   left: 0;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(0.5rem);
 `
 
 export const NavLinks = styled.ul`
@@ -51,7 +60,7 @@ export const NavLinks = styled.ul`
   }
 
   li {
-    margin: 0 10px;
+    margin: 0 1rem;
   }
 `
 export const NavLink = styled.button`
@@ -60,6 +69,26 @@ export const NavLink = styled.button`
   padding: 0 !important;
   cursor: pointer;
   text-transform: lowercase;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+`
+
+export const Logo = styled.h1`
+  z-index: 998;
+  height: auto;
+  width: auto;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  font-weight: 500;
+`
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: rgba(38, 36, 35, 1);
+  margin: 3rem 3rem 0;
+  width: fit-content;
+  height: fit-content;
+
+  @media screen and (min-width: 992px) {
+    margin: 5.5rem 6rem 0;
+  }
 `

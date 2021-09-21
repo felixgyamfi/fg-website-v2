@@ -1,46 +1,50 @@
 import styled from "styled-components"
 
+const globalPadding = `
+padding: 0 3.3rem 0;
+`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  position: absolute;
   overflow-y: none;
   width: 100vw;
   height: 100vh;
 `
 export const ProjectInfo = styled.h1`
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  margin-top: 70px;
+  margin-top: 7rem;
   text-transform: uppercase;
-  padding: 0px 33px 0;
+  ${globalPadding}
 `
 export const ProjectData = styled.div`
-  padding: 0px 33px 0;
   display: flex;
   flex-direction: column;
   margin-top: 10vh;
+  ${globalPadding}
 `
 export const ProjectTitle = styled.h2`
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
-  line-height: 28.8px;
+  line-height: 2.8rem;
   text-transform: lowercase;
-  margin-left: 33px;
+  margin-left: 3.3rem;
 `
 export const ProjectIndex = styled.p`
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: 500;
   color: transparent;
   -webkit-text-stroke: 1.5px black;
 `
 export const LetterDecoration = styled.p`
-  margin-top: 0vh;
+  top: 0;
+  left: 0;
+  margin-left: 30%;
+  margin-top: 8vh;
   position: absolute;
-  line-height: 620px;
-  left: 30%;
-  font-size: 600px;
+  line-height: 62rem;
+  font-size: 60rem;
   font-weight: 900;
   color: rgba(38, 36, 35, 1);
 `
