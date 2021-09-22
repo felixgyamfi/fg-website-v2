@@ -42,6 +42,9 @@ export const MenuBtn = styled.button`
 export const NavLinksBG = styled.div`
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   position: absolute;
   padding-right: 4.4rem;
   padding-top: 2.2rem;
@@ -52,14 +55,21 @@ export const NavLinksBG = styled.div`
 
 export const NavLinks = styled.ul`
   list-style: none;
-  display: unset;
+  display: inline-block;
   text-align: right;
+  width: max-content;
 
   .hide-links {
     display: none;
   }
 
+  button {
+    :hover {
+      color: whitesmoke;
+    }
+  }
   li {
+    font-weight: 500;
     margin: 0 1rem;
   }
 `

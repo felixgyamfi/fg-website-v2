@@ -7,7 +7,7 @@ import Nav from "../components/Nav copy 2/Nav"
 
 import LandingPage from "./LandingPage/LandingPage"
 import ProjectTemplate from "./ProjectTemplate"
-import TestProject3 from "./TestProject3"
+import About from "./About"
 import TestProject4 from "./TestProject4"
 import TestProject5 from "./TestProject5"
 import TestProject6 from "./TestProject6"
@@ -34,7 +34,7 @@ const IndexPage = () => (
       <Seo title="P1" />
     </LandingPage>
     <ProjectTemplate />
-    <TestProject3 />
+    <About />
     <TestProject4 />
     <TestProject5 />
     <TestProject6 />

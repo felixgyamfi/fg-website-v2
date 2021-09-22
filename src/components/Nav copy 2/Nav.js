@@ -36,7 +36,7 @@ function Navigation() {
             </li>
             <li>
               <div onClick={() => setHide(true)}>
-                <NavLink onClick={() => scrollTo("#Test3")}>Test3_</NavLink>
+                <NavLink onClick={() => scrollTo("#Test3")}>about_</NavLink>
               </div>
             </li>
             <li>

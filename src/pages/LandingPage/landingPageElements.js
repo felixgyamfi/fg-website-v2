@@ -55,8 +55,7 @@ export const ArrowButtons = styled.div`
     width: 20rem;
     height: 12rem;
     font-size: 5rem;
-    align-self: flex-end;
     margin-right: 31rem;
-    margin-bottom: 5vw;
+    margin-top: 55vw;
   }
 `
