@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 const Wrapper = styled.div`
   position: absolute;
   overflow-y: auto;
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
   top: 400rem;
@@ -13,7 +14,7 @@ const Wrapper = styled.div`
 `
 const Content = styled.div`
   padding-top: 9rem;
-  padding-left: 3rem;
+  margin-left: 3rem;
 `
 
 const TitleText = styled.div`
@@ -55,6 +56,14 @@ const ExLink = styled(Link)`
     border-bottom: 2px solid currentColor;
     display: inline-block;
   }
+`
+const HeroFont = styled.div`
+  font-size: 20rem;
+  font-weight: 900;
+  transform: rotate(270deg);
+  position: absolute;
+  right: -22rem;
+  top: 65%;
 `
 
 function About() {
@@ -105,6 +114,7 @@ function About() {
               <p>collaboration ↗</p>
             </ExLink>
           </LinkWrap>
+          <HeroFont>about</HeroFont>
         </Content>
       </Wrapper>
     </div>
