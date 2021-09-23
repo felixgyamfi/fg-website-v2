@@ -30,7 +30,6 @@ export const TitleText = styled.p`
   font-size: 3.6rem;
   line-height: 4.3rem;
 `
-
 export const ArrowButton = styled.div`
   width: fit-content;
   font-size: inherit;

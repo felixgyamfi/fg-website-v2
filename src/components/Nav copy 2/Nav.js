@@ -5,6 +5,7 @@ import {
   Wrapper,
   Nav,
   MenuBtn,
+  MenuBtnClose,
   NavLinks,
   NavLinksBG,
   NavLink,
@@ -26,7 +27,7 @@ function Navigation() {
           <Logo>Felix Gyamfi</Logo>
         </StyledLink>
         <MenuBtn onClick={() => setHide(!hide)}>menu</MenuBtn>
-        <NavLinksBG className={hide ? "hide" : ""}>
+        <NavLinksBG onClick={linkHandler} className={hide ? "hide" : ""}>
           <NavLinks>
             <li>
               <div onClick={linkHandler}>
@@ -59,6 +60,9 @@ function Navigation() {
               </div>
             </li>
           </NavLinks>
+          <MenuBtnClose onClick={() => setHide(!hide)}>
+            close menu x
+          </MenuBtnClose>
         </NavLinksBG>
       </Nav>
     </Wrapper>
