@@ -1,26 +1,21 @@
 import React from "react"
 import styled from "styled-components"
-import scrollTo from "gatsby-plugin-smoothscroll"
+import { CustomLink } from "../../components/Navigation/CustomLink"
 
-const NavLink = styled.button`
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-transform: lowercase;
+const Wrapper = styled.div`
+  button {
+    text-transform: lowercase;
+  }
   font-size: 2.4rem;
   line-height: 3.6rem;
 `
-export const scrollLink = (pageHash = "") => {
-  return () => scrollTo(pageHash)
-}
+
+const NavLink = styled(CustomLink)``
 
 export const NavEntry = ({ pageHash, pageTitle }) => {
   return (
-    <li>
-      <div>
-        <NavLink onClick={scrollLink(pageHash)}>{pageTitle}</NavLink>
-      </div>
-    </li>
+    <Wrapper>
+      <NavLink pageHash={pageHash} pageTitle={pageTitle} />
+    </Wrapper>
   )
 }

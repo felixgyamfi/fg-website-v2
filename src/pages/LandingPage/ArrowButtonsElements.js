@@ -5,7 +5,7 @@ export const ArrowButton = styled(CustomLink)`
   width: fit-content;
   font-size: inherit;
 `
-export const ArrowButtons = styled.div`
+export const ArrowButtons = styled.ul`
   width: 15.5rem;
   height: 7rem;
   font-size: 3.6rem;
@@ -14,15 +14,19 @@ export const ArrowButtons = styled.div`
   padding: 0 3.3rem;
   z-index: 100;
 
-  ul {
+  li {
     list-style: none;
   }
 
   .right {
-    align-self: flex-end;
+    li {
+      align-self: flex-start;
+    }
   }
   .left {
-    align-self: flex-start;
+    li {
+      align-self: flex-end;
+    }
   }
 
   @media screen and (min-width: 992px) {
