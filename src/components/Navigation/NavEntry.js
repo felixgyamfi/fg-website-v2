@@ -16,13 +16,11 @@ const scrollLink = (pageHash = "") => {
   return () => scrollTo(pageHash)
 }
 
-export const NavEntry = props => {
+export const NavEntry = ({ pageHash, pageTitle }) => {
   return (
     <li>
       <div>
-        <NavLink onClick={scrollLink(props.pageHash)}>
-          {props.pageTitle}
-        </NavLink>
+        <NavLink onClick={scrollLink(pageHash)}>{pageTitle}</NavLink>
       </div>
     </li>
   )

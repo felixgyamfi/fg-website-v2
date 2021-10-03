@@ -9,25 +9,31 @@ import {
   ProjectTitle,
   LetterDecoration,
 } from "./ProjectTemplateElements"
-import { ImageGallery } from "./ProjectImageGallery"
+import ImageGallery from "./ProjectImageGallery"
 import ScrollBox from "../../components/ScrollBox/ScrollBox"
 
-function ProjectTemplate() {
+function ProjectTemplate({
+  id,
+  infoSubTitle,
+  projectIndex,
+  projectTitle,
+  letterDec,
+}) {
   return (
     <Layout>
-      <div className="Project1" id="P1">
+      <div className="Project1" id={id}>
         <Wrapper>
           <ProjectDataWrapper className="project-data">
-            <ProjectInfo>Project Template</ProjectInfo>
+            <ProjectInfo>{infoSubTitle}</ProjectInfo>
             <ProjectData>
-              <ProjectIndex>0{"\ue768"}</ProjectIndex>
-              <ProjectTitle>Project title</ProjectTitle>
+              <ProjectIndex>{projectIndex}</ProjectIndex>
+              <ProjectTitle>{projectTitle}</ProjectTitle>
             </ProjectData>
           </ProjectDataWrapper>
           <ImageGallery className="image-gallery"></ImageGallery>
           <ScrollBox />
         </Wrapper>
-        <LetterDecoration>T</LetterDecoration>
+        <LetterDecoration>{letterDec}</LetterDecoration>
       </div>
     </Layout>
   )
