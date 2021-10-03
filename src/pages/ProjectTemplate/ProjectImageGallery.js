@@ -5,6 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 const ProjectImageGalleryWrapper = styled.div`
   z-index: 1;
   height: 60vh;
+  position: absolute;
+  bottom: 0;
 `
 const ProjectImageGallery = styled.div`
   position: relative;
