@@ -1,25 +1,17 @@
 import React from "react"
+import { ArrowBtns } from "./ArrowButtons"
 import ImageStack from "./ImageStack"
 
-import {
-  Wrapper,
-  TitleWrapper,
-  TitleText,
-  ArrowButton,
-  ArrowButtons,
-} from "./LandingPageElements"
+import { Wrapper, TitleWrapper, TitleText } from "./LandingPageElements"
 
 function LandingPage() {
   return (
-    <div className="Test1">
-      <Wrapper id="Test1">
+    <div>
+      <Wrapper id="landingPage">
         <TitleWrapper>
           <TitleText>is a photographer based in Kiel, Germany</TitleText>
         </TitleWrapper>
-        <ArrowButtons>
-          <ArrowButton className="right">←</ArrowButton>
-          <ArrowButton className="left">→</ArrowButton>
-        </ArrowButtons>
+        <ArrowBtns />
         <ImageStack className="image-stack" />
       </Wrapper>
     </div>

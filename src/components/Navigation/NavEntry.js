@@ -3,9 +3,9 @@ import styled from "styled-components"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 const NavLink = styled.button`
-  background: none !important;
+  background: none;
   border: none;
-  padding: 0 !important;
+  padding: 0;
   cursor: pointer;
   text-transform: lowercase;
   font-size: 2.4rem;

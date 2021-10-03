@@ -30,31 +30,3 @@ export const TitleText = styled.p`
   font-size: 3.6rem;
   line-height: 4.3rem;
 `
-export const ArrowButton = styled.div`
-  width: fit-content;
-  font-size: inherit;
-`
-export const ArrowButtons = styled.div`
-  width: 15.5rem;
-  height: 7rem;
-  font-size: 3.6rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 3.3rem;
-  z-index: 100;
-
-  .right {
-    align-self: flex-end;
-  }
-  .left {
-    align-self: flex-start;
-  }
-
-  @media screen and (min-width: 992px) {
-    width: 20rem;
-    height: 12rem;
-    font-size: 5rem;
-    margin-right: 31rem;
-    margin-top: 55vw;
-  }
-`
