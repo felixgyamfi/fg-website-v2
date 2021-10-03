@@ -7,7 +7,7 @@ import {
   TitleText,
   ArrowButton,
   ArrowButtons,
-} from "./landingPageElements"
+} from "./LandingPageElements"
 
 function LandingPage() {
   return (

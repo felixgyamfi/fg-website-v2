@@ -32,8 +32,7 @@ const ProjectImageWrapper = styled.div`
     max-width: 80vw;
   }
 `
-
-export function ImageGallery() {
+export default function ImageGallery() {
   return (
     <ProjectImageGalleryWrapper>
       <ProjectImageGallery>

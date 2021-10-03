@@ -6,7 +6,7 @@ import {
   StackItemTop,
   StackItemBottom,
   Container,
-} from "./imageStackElements"
+} from "./ImageStackElements"
 
 function ImageStack() {
   return (
