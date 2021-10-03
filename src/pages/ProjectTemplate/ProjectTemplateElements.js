@@ -14,9 +14,13 @@ export const ProjectInfo = styled.h1`
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  margin-top: 7rem;
+  margin-top: 7.5rem;
   text-transform: uppercase;
   ${globalPadding}
+
+  @media screen and (min-width: 992px) {
+    margin: 10rem 3rem 0;
+  }
 `
 export const ProjectData = styled.div`
   display: flex;

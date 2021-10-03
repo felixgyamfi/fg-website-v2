@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { CustomLink } from "../../components/Navigation/CustomLink"
+import { CustomLink } from "../Links/CustomLink"
 
 const Wrapper = styled.div`
   button {
@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 
 const NavLink = styled(CustomLink)``
 
-export const NavEntry = ({ pageHash, pageTitle }) => {
+export const NavItem = ({ pageHash, pageTitle }) => {
   return (
     <Wrapper>
       <NavLink pageHash={pageHash} pageTitle={pageTitle} />

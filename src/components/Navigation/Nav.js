@@ -10,7 +10,7 @@ import {
   StyledLink,
 } from "./NavElements"
 
-import { createNavLinks as LinkList } from "./createNavLinks"
+import { createNavItems as NavItems } from "./createNavItems"
 
 function Navigation() {
   const [hide, setHide] = useState(true)
@@ -28,7 +28,7 @@ function Navigation() {
         <MenuBtn onClick={() => setHide(!hide)}>menu</MenuBtn>
         <NavLinksBG onClick={linkHandler} className={hide ? "hide" : ""}>
           <NavLinks>
-            <LinkList />
+            <NavItems />
           </NavLinks>
           <MenuBtnClose onClick={() => setHide(!hide)}>
             close menu x

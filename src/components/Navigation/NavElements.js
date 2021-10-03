@@ -107,6 +107,7 @@ export const StyledLink = styled(Link)`
   margin: 3rem 3rem 0;
   width: fit-content;
   height: fit-content;
+  white-space: nowrap;
 
   @media screen and (min-width: 992px) {
     margin: 5.5rem 6rem 0;
