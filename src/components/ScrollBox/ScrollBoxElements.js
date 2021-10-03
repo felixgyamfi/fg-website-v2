@@ -23,6 +23,10 @@ export const ScrollBox = styled.div`
     text-decoration: underline;
     font-size: 1.8rem;
   }
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
 `
 export const Arrow = styled(Link)`
   font-size: 3.6rem;

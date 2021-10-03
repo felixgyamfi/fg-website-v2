@@ -9,7 +9,7 @@ import {
   ProjectTitle,
   LetterDecoration,
 } from "./ProjectTemplateElements"
-import ImageGallery from "./ProjectImageGallery"
+import ImageGallery from "./ProjectImageGalleryPrvw"
 import ScrollBox from "../../components/ScrollBox/ScrollBox"
 
 function ProjectTemplate({

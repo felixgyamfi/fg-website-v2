@@ -19,7 +19,7 @@ export const ProjectInfo = styled.h1`
   ${globalPadding}
 
   @media screen and (min-width: 992px) {
-    margin: 11rem 3rem 0;
+    margin-left: 3rem;
   }
 `
 export const ProjectData = styled.div`

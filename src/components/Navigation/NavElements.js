@@ -110,6 +110,6 @@ export const StyledLink = styled(Link)`
   white-space: nowrap;
 
   @media screen and (min-width: 992px) {
-    margin: 5.5rem 6rem 0;
+    margin: 3rem 6rem 0;
   }
 `
