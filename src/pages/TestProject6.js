@@ -14,8 +14,8 @@ const Wrapper = styled.div`
 
 function TestProject6() {
   return (
-    <div className="Test6">
-      <Wrapper id="Test6">
+    <div>
+      <Wrapper id="P6">
         <h1>Test6</h1>
       </Wrapper>
     </div>

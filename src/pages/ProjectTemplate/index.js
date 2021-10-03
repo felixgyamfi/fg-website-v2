@@ -6,7 +6,7 @@ const index = () => {
   return (
     <div>
       <ProjectTemplate
-        id={"P1"}
+        id={data[0].id}
         infoSubTitle={data[0].infoSubTitle}
         projectIndex={data[0].projectIndex}
         projectTitle={data[0].projectTitle}

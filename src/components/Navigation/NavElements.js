@@ -93,16 +93,6 @@ export const NavLinks = styled.ul`
     margin: 0 1rem;
   }
 `
-export const NavLink = styled.button`
-  background: none !important;
-  border: none;
-  padding: 0 !important;
-  cursor: pointer;
-  text-transform: lowercase;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-`
-
 export const Logo = styled.h1`
   z-index: 998;
   height: auto;

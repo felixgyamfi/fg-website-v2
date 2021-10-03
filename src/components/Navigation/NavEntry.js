@@ -11,8 +11,7 @@ const NavLink = styled.button`
   font-size: 2.4rem;
   line-height: 3.6rem;
 `
-
-const scrollLink = (pageHash = "") => {
+export const scrollLink = (pageHash = "") => {
   return () => scrollTo(pageHash)
 }
 

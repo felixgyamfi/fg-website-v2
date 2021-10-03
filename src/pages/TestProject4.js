@@ -13,8 +13,8 @@ const Wrapper = styled.div`
 
 function TestProject4() {
   return (
-    <div className="Test4">
-      <Wrapper id="Test4">
+    <div>
+      <Wrapper id="P4">
         <h1>Test4</h1>
       </Wrapper>
     </div>

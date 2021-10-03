@@ -14,7 +14,7 @@ const IndexPage = () => (
     <Nav />
     <Seo title="Felix Gyamfi" />
     <LandingPage>
-      <Seo title="P1" />
+      <Seo title="Home" />
     </LandingPage>
     <ProjectTemplate />
     <About />

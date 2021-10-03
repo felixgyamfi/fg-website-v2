@@ -1,33 +1,33 @@
 const attributes = [
   {
     id: "0",
-    route: "P1",
+    route: "Project 01",
     hash: "#P1",
   },
   {
     id: "1",
     route: "Home",
-    hash: "#Test1",
+    hash: "#landingPage",
   },
   {
     id: "2",
     route: "about_",
-    hash: "#Test3",
+    hash: "#aboutPage",
   },
   {
     id: "3",
-    route: "Test4_",
-    hash: "#Test4",
+    route: "Project4_",
+    hash: "#P4",
   },
   {
     id: "4",
-    route: "Test5_",
-    hash: "#Test5",
+    route: "Project5_",
+    hash: "#P5",
   },
   {
     id: "5",
-    route: "Test6_",
-    hash: "#Test6",
+    route: "Project6_",
+    hash: "#P6",
   },
 ]
 

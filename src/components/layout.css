@@ -70,12 +70,16 @@ template {
   display: none;
 }
 a {
+  color: unset;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
   outline-width: 0;
+}
+a:visited {
+  color: dimgray;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
