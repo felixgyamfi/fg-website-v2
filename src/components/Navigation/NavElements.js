@@ -46,8 +46,8 @@ export const MenuBtn = styled.button`
   transform: rotate(90deg);
   width: auto;
   height: max-content;
-  background: none !important;
-  padding: 0 !important;
+  background: none;
+  padding: 0;
   cursor: pointer;
   font-size: 2.4rem;
 

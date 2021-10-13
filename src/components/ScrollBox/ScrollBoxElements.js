@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import styled from "styled-components"
 
 export const ScrollBoxWrapper = styled.div`
@@ -19,8 +18,10 @@ export const ScrollBox = styled.div`
   align-items: center;
   width: 15rem;
   p {
+    font-size: 2.4rem;
+    font-weight: 500;
     margin: auto 0;
-    text-decoration: underline;
+    border-bottom: 2.5px solid currentColor;
     font-size: 1.8rem;
   }
 
@@ -28,7 +29,10 @@ export const ScrollBox = styled.div`
     display: none;
   }
 `
-export const Arrow = styled(Link)`
+export const Arrow = styled.button`
   font-size: 3.6rem;
   margin: 1rem 3rem;
+  border: none;
+  padding: 0;
+  background: none;
 `
