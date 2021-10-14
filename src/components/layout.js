@@ -15,27 +15,27 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const [vpHeight, setVpHeight] = useState(0)
-  const footerHeight = 1 * 30 //10 for rems
+  const [gridHeight, setGridHeight] = useState(0)
+  const footerHeight = 1 //rems
 
+  //calculate Viewport grid height minus footer height; useEffect for access to window attribute
   useEffect(() => {
-    const height = parseFloat(window.visualViewport.height)
-    const vpHeight = height - footerHeight
-    setVpHeight(vpHeight)
-  }, [vpHeight])
+    const vpHeight = parseFloat(window.visualViewport.height)
+    const gridHeight = vpHeight - footerHeight
+    setGridHeight(gridHeight)
+  }, [gridHeight])
 
   return (
     <div
       style={{
         maxHeight: `100vh`,
         display: `grid`,
-        gridTemplate: `${vpHeight}px ${footerHeight}rem / 100%`,
+        gridTemplate: `${gridHeight}px ${footerHeight * 10}rem / 100%`,
       }}
     >
       <main
         style={{
           width: `100vw`,
-          background: `green`,
         }}
       >
         {children}
@@ -43,7 +43,6 @@ const Layout = ({ children }) => {
       <footer
         style={{
           gridArea: `2/1`,
-          backgroundColor: `blue`,
           padding: `0 3.3rem`,
           fontSize: `1rem`,
         }}
