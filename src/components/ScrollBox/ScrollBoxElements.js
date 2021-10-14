@@ -10,6 +10,7 @@ export const ScrollBoxWrapper = styled.div`
   z-index: 500;
   height: 100%;
   justify-content: flex-end;
+  pointer-events: none;
 `
 export const ScrollBox = styled.div`
   margin-bottom: 3.5rem;
@@ -17,6 +18,7 @@ export const ScrollBox = styled.div`
   display: flex;
   align-items: center;
   width: 15rem;
+  pointer-events: all;
   p {
     font-size: 2.4rem;
     font-weight: 500;
@@ -30,6 +32,7 @@ export const ScrollBox = styled.div`
   }
 `
 export const Arrow = styled.button`
+  cursor: pointer;
   font-size: 3.6rem;
   margin: 1rem 3rem;
   border: none;
