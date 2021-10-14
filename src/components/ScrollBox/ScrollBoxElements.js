@@ -7,7 +7,7 @@ export const ScrollBoxWrapper = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: flex-end;
-  z-index: 10;
+  z-index: 500;
   height: 100%;
   justify-content: flex-end;
 `
