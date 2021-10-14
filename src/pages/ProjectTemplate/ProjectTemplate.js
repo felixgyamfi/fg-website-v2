@@ -21,20 +21,19 @@ function ProjectTemplate({
 }) {
   return (
     <Layout>
-      <div className="Project1" id={id}>
-        <Wrapper>
-          <ProjectDataWrapper className="project-data">
-            <ProjectInfo>{infoSubTitle}</ProjectInfo>
-            <ProjectData>
-              <ProjectIndex>{projectIndex}</ProjectIndex>
-              <ProjectTitle>{projectTitle}</ProjectTitle>
-            </ProjectData>
-          </ProjectDataWrapper>
-          <ImageGallery className="image-gallery"></ImageGallery>
-          <ScrollBox />
-        </Wrapper>
+      <Wrapper className="Project1" id={id}>
+        <ProjectDataWrapper className="project-data">
+          <ProjectInfo>{infoSubTitle}</ProjectInfo>
+          <ProjectData>
+            <ProjectIndex>{projectIndex}</ProjectIndex>
+            <ProjectTitle>{projectTitle}</ProjectTitle>
+          </ProjectData>
+        </ProjectDataWrapper>
+        <ImageGallery className="image-gallery"></ImageGallery>
+        <ScrollBox />
+
         <LetterDecoration>{letterDec}</LetterDecoration>
-      </div>
+      </Wrapper>
     </Layout>
   )
 }
