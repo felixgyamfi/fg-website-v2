@@ -31,7 +31,6 @@ function ProjectTemplate({
         </ProjectDataWrapper>
         <ImageGallery className="image-gallery"></ImageGallery>
         <ScrollBox />
-
         <LetterDecoration>{letterDec}</LetterDecoration>
       </Wrapper>
     </Layout>

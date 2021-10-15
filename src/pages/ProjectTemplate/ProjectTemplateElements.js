@@ -4,9 +4,14 @@ const globalPadding = `
 padding: 0 3.3rem 0;
 `
 export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  overflow-y: none;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 45% 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
   width: 100vw;
   height: 100vh;
 `
@@ -21,6 +26,12 @@ export const ProjectInfo = styled.h1`
   @media screen and (min-width: 992px) {
     margin-left: 3rem;
   }
+`
+export const ProjectDataWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  width: max-content;
 `
 export const ProjectData = styled.div`
   display: flex;
@@ -56,10 +67,4 @@ export const LetterDecoration = styled.p`
   font-size: 60rem;
   font-weight: 900;
   color: rgba(38, 36, 35, 1);
-`
-
-export const ProjectDataWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  z-index: 20;
 `

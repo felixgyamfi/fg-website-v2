@@ -3,7 +3,6 @@ html {
   -webkit-text-size-adjust: 100%;
   font: aeonik, serif, sans-serif;
   font-size: 62.5%;
-  overflow: hidden;
   height: 100vh;
   width: 100vw;
 }
@@ -37,6 +36,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  overflow: hidden;
 }
 article,
 aside,
