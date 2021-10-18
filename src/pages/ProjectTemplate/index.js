@@ -11,6 +11,7 @@ const index = () => {
         projectIndex={data[0].projectIndex}
         projectTitle={data[0].projectTitle}
         letterDec={data[0].projectTitle.charAt(0)}
+        projectDesc={data[0].projectDesc}
       />
     </div>
   )
