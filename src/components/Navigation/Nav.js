@@ -22,9 +22,12 @@ function Navigation() {
   return (
     <Wrapper>
       <Nav className="Nav">
-        <StyledLink to="/">
-          <Logo>Felix Gyamfi</Logo>
-        </StyledLink>
+        <Logo>
+          <StyledLink
+            pageHash={"#landingPage"}
+            pageTitle="Felix Gyamfi"
+          ></StyledLink>
+        </Logo>
         <MenuBtn onClick={() => setHide(!hide)}>menu</MenuBtn>
         <NavLinksBG onClick={linkHandler} className={hide ? "hide" : ""}>
           <NavLinks>

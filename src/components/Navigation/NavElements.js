@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { CustomLink } from "../Links/CustomLink"
 
 export const Wrapper = styled.div`
   height: auto;
@@ -94,16 +94,12 @@ export const NavLinks = styled.ul`
   }
 `
 export const Logo = styled.h1`
+  list-style: none;
   z-index: 998;
   height: auto;
-  width: auto;
   font-size: 3.6rem;
   line-height: 4.3rem;
   font-weight: 500;
-`
-export const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: rgba(38, 36, 35, 1);
   margin: 3rem 3rem 0;
   width: fit-content;
   height: fit-content;
@@ -112,4 +108,7 @@ export const StyledLink = styled(Link)`
   @media screen and (min-width: 992px) {
     margin: 3rem 6rem 0;
   }
+`
+export const StyledLink = styled(CustomLink)`
+  color: rgba(38, 36, 35, 1);
 `

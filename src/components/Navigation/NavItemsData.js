@@ -1,31 +1,31 @@
 const attributes = [
   {
-    id: "0",
+    index: "0",
     route: "Project 01",
     hash: "#P1",
   },
   {
-    id: "1",
+    index: "1",
     route: "Home",
     hash: "#landingPage",
   },
   {
-    id: "2",
+    index: "2",
     route: "about_",
     hash: "#aboutPage",
   },
   {
-    id: "3",
+    index: "3",
     route: "Project4_",
     hash: "#P4",
   },
   {
-    id: "4",
+    index: "4",
     route: "Project5_",
     hash: "#P5",
   },
   {
-    id: "5",
+    index: "5",
     route: "Project6_",
     hash: "#P6",
   },
