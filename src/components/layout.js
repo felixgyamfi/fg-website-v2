@@ -1,6 +1,8 @@
 import * as React from "react"
 import { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Nav from "../components/Navigation"
+import Footer from "./Footer"
 
 import "./layout.css"
 
@@ -16,41 +18,36 @@ const Layout = ({ children }) => {
   `)
 
   const [gridHeight, setGridHeight] = useState(0)
-  const footerHeight = 1 //rems
+  const [footerHeight, setFooterHeight] = useState(10) //px
 
   //calculate Viewport grid height minus footer height; useEffect for access to window attribute
   useEffect(() => {
     const vpHeight = parseFloat(window.visualViewport.height)
     const gridHeight = vpHeight - footerHeight
     setGridHeight(gridHeight)
-  }, [gridHeight])
+    setFooterHeight(10)
+  }, [])
 
   return (
-    <div
-      style={{
-        maxHeight: `100vh`,
-        display: `grid`,
-        gridTemplate: `${gridHeight}px ${footerHeight * 10}rem / 100%`,
-      }}
-    >
-      <main
+    <>
+      <Nav />
+      <div
         style={{
-          width: `100vw`,
+          maxHeight: `100vh`,
+          display: `grid`,
+          gridTemplate: `${gridHeight}px ${footerHeight}px / 100%`,
         }}
       >
-        {children}
-      </main>
-      <footer
-        style={{
-          gridArea: `2/1`,
-          padding: `0 3.3rem`,
-          fontSize: `1rem`,
-        }}
-      >
-        © {new Date().getFullYear()}, Felix Gyamfi
-        {` `}
-      </footer>
-    </div>
+        <main
+          style={{
+            width: `100vw`,
+          }}
+        >
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </>
   )
 }
 
