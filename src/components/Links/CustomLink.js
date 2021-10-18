@@ -14,8 +14,8 @@ export const scrollLink = (pageHash = "") => {
 
 export const CustomLink = ({ pageHash, pageTitle }) => {
   return (
-    <li>
+    <>
       <CstmLink onClick={scrollLink(pageHash)}>{pageTitle}</CstmLink>
-    </li>
+    </>
   )
 }

@@ -15,7 +15,9 @@ const NavLink = styled(CustomLink)``
 export const NavItem = ({ pageHash, pageTitle }) => {
   return (
     <Wrapper>
-      <NavLink pageHash={pageHash} pageTitle={pageTitle} />
+      <li>
+        <NavLink pageHash={pageHash} pageTitle={pageTitle} />
+      </li>
     </Wrapper>
   )
 }
