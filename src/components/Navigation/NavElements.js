@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { CustomLink } from "../Links/CustomLink"
 
 export const Wrapper = styled.div`
   height: auto;
@@ -92,23 +91,4 @@ export const NavLinks = styled.ul`
     font-weight: 500;
     margin: 0 1rem;
   }
-`
-export const Logo = styled.h1`
-  list-style: none;
-  z-index: 998;
-  height: auto;
-  font-size: 3.6rem;
-  line-height: 4.3rem;
-  font-weight: 500;
-  margin: 3rem 3rem 0;
-  width: fit-content;
-  height: fit-content;
-  white-space: nowrap;
-
-  @media screen and (min-width: 992px) {
-    margin: 3rem 6rem 0;
-  }
-`
-export const StyledLink = styled(CustomLink)`
-  color: rgba(38, 36, 35, 1);
 `

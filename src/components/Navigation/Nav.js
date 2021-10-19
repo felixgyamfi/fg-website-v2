@@ -6,11 +6,10 @@ import {
   MenuBtnClose,
   NavLinks,
   NavLinksBG,
-  Logo,
-  StyledLink,
 } from "./NavElements"
 
 import { createNavItems as NavItems } from "./createNavItems"
+import NavLogo from "./NavLogo"
 
 function Navigation() {
   const [hide, setHide] = useState(true)
@@ -22,12 +21,7 @@ function Navigation() {
   return (
     <Wrapper>
       <Nav className="Nav">
-        <Logo>
-          <StyledLink
-            pageHash={"#landingPage"}
-            pageTitle="Felix Gyamfi"
-          ></StyledLink>
-        </Logo>
+        <NavLogo></NavLogo>
         <MenuBtn onClick={() => setHide(!hide)}>menu</MenuBtn>
         <NavLinksBG onClick={linkHandler} className={hide ? "hide" : ""}>
           <NavLinks>
