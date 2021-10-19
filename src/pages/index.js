@@ -1,26 +1,26 @@
 import * as React from "react"
 import Seo from "../components/seo"
-import Nav from "../components/Navigation/Nav"
 
 import LandingPage from "./LandingPage/LandingPage"
 import ProjectTemplate from "./ProjectTemplate"
+import Project1 from "./Projects/Project1"
+import Project2 from "./Projects/Project2"
+import Project3 from "./Projects/Project3"
 import About from "./About"
-import TestProject4 from "./TestProject4"
-import TestProject5 from "./TestProject5"
-import TestProject6 from "./TestProject6"
 
 const IndexPage = () => (
   <>
-    <Nav />
     <Seo title="Felix Gyamfi" />
     <LandingPage>
       <Seo title="Home" />
     </LandingPage>
     <ProjectTemplate />
-    <About />
-    <TestProject4 />
-    <TestProject5 />
-    <TestProject6 />
+    <Project1 />
+    <Project2 />
+    <Project3 />
+    <About>
+      <Seo title="About" />
+    </About>
   </>
 )
 

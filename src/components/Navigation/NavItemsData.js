@@ -1,33 +1,32 @@
+import { pages } from "../../pages/pagesData"
+
+console.dir(pages[2].id)
+
 const attributes = [
   {
-    index: "0",
-    route: "Project 01",
-    hash: "#P1",
-  },
-  {
-    index: "1",
+    index: 0,
     route: "Home",
     hash: "#landingPage",
   },
   {
-    index: "2",
-    route: "about_",
+    index: 1,
+    route: "About",
     hash: "#aboutPage",
   },
   {
-    index: "3",
-    route: "Project4_",
-    hash: "#P4",
+    index: 2,
+    route: `${pages[2].projectTitle}`,
+    hash: `#${pages[2].id}`,
   },
   {
-    index: "4",
-    route: "Project5_",
-    hash: "#P5",
+    index: 2,
+    route: `${pages[3].projectTitle}`,
+    hash: `#${pages[3].id}`,
   },
   {
-    index: "5",
-    route: "Project6_",
-    hash: "#P6",
+    index: 2,
+    route: `${pages[4].projectTitle}`,
+    hash: `#${pages[4].id}`,
   },
 ]
 
