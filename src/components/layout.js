@@ -1,22 +1,9 @@
 import * as React from "react"
 import { useState, useEffect } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Nav from "../components/Navigation"
-import Footer from "./Footer"
 
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   const [gridHeight, setGridHeight] = useState(0)
   const [footerHeight, setFooterHeight] = useState(10) //px
 
@@ -30,7 +17,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Nav />
       <div
         style={{
           maxHeight: `100vh`,
@@ -45,7 +31,6 @@ const Layout = ({ children }) => {
         >
           {children}
         </main>
-        <Footer />
       </div>
     </>
   )
