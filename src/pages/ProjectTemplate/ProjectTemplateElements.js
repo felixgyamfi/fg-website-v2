@@ -54,12 +54,13 @@ export const ProjectDataWrapper = styled.div`
   }
 `
 export const ProjectInfo = styled.h1`
+  max-width: 80%;
   font-size: 1.2rem;
+  line-height: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  margin-top: 8.5rem;
   text-transform: uppercase;
-  ${globalPadding}
+  margin: 8.5rem 3.3rem 0;
 
   @media screen and (min-width: 992px) {
     width: max-content;
@@ -69,6 +70,7 @@ export const ProjectInfo = styled.h1`
 `
 export const ProjectTitleWrap = styled.div`
   ${globalPadding}
+  width: 75%;
   @media screen and (min-width: 992px) {
     grid-column: 3/4;
     grid-row: 6/7;
@@ -94,6 +96,7 @@ export const ProjectTitle = styled.h2`
 export const ProjectIndex = styled.p`
   margin-top: 20vh;
   height: fit-content;
+  width: fit-content;
   ${globalPadding}
   bottom: 2rem;
   margin-bottom: 0;

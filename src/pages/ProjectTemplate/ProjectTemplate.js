@@ -1,5 +1,4 @@
 import React from "react"
-import styled from "styled-components"
 import Layout from "../../components/layout"
 import {
   Wrapper,
@@ -13,42 +12,7 @@ import {
 } from "./ProjectTemplateElements"
 import ImageGallery from "./ProjectImageGalleryPrvw"
 import ScrollBox from "../../components/ScrollBox/ScrollBox"
-
-const StyledBtn = styled.button`
-  display: none;
-
-  .open {
-    background-color: coral;
-  }
-
-  @media screen and (min-width: 992px) {
-    display: inline-block;
-    cursor: pointer;
-    border: none;
-    margin: 1rem 0 0 0;
-    padding: 0;
-    background: none;
-    padding: 0;
-
-    p {
-      font-size: 2.4rem;
-      font-weight: 500;
-      margin: auto 0;
-      border-bottom: 2.5px solid currentColor;
-    }
-  }
-`
-
-function UnfoldBtn() {
-  function clickHandle() {
-    console.log("unfold button clicked")
-  }
-  return (
-    <StyledBtn onClick={clickHandle}>
-      <p>unfold +</p>
-    </StyledBtn>
-  )
-}
+import { UnfoldBtn } from "./UnfoldBtn"
 
 function ProjectTemplate({
   id,
@@ -57,10 +21,22 @@ function ProjectTemplate({
   projectTitle,
   letterDec,
   projectDesc,
+  pVert,
+  pHorz,
+  bgColor,
 }) {
   return (
-    <Layout>
-      <Wrapper className="Project1" id={id}>
+    <>
+      <Wrapper
+        className="project-page"
+        style={{
+          position: `relative`,
+          top: `${pVert}`,
+          left: `${pHorz}`,
+          backgroundColor: `${bgColor}`,
+        }}
+        id={id}
+      >
         <ProjectDataWrapper className="project-data">
           <ProjectInfo>{infoSubTitle}</ProjectInfo>
           <ProjectIndex>{projectIndex}</ProjectIndex>
@@ -73,12 +49,12 @@ function ProjectTemplate({
         <ScrollBox />
         <LetterDecoration>{letterDec}</LetterDecoration>
         <ProjectDesc className="description">
-          {projectDesc.map(entry => (
+          {/* {projectDesc.map(entry => (
             <p>{entry}</p>
-          ))}
+          ))} */}
         </ProjectDesc>
       </Wrapper>
-    </Layout>
+    </>
   )
 }
 

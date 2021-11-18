@@ -5,8 +5,8 @@ export const Wrapper = styled.div`
   overflow: visible;
   width: 100vw;
   height: 100vh;
-  top: 100rem;
-  left: 200rem;
+  top: 300rem;
+  left: 300rem;
   background-color: rgba(223, 221, 217, 1);
   padding-top: 4rem;
 
