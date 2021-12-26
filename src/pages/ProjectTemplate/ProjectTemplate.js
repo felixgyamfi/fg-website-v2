@@ -27,33 +27,35 @@ function ProjectTemplate({
 }) {
   return (
     <>
-      <Wrapper
-        className="project-page"
-        style={{
-          position: `relative`,
-          top: `${pVert}`,
-          left: `${pHorz}`,
-          backgroundColor: `${bgColor}`,
-        }}
-        id={id}
-      >
-        <ProjectDataWrapper className="project-data">
-          <ProjectInfo>{infoSubTitle}</ProjectInfo>
-          <ProjectIndex>{projectIndex}</ProjectIndex>
-          <ProjectTitleWrap className="project-title">
-            <ProjectTitle>{projectTitle}</ProjectTitle>
-            <UnfoldBtn className="unfold"></UnfoldBtn>
-          </ProjectTitleWrap>
-        </ProjectDataWrapper>
-        <ImageGallery className="image-gallery"></ImageGallery>
-        <ScrollBox />
-        <LetterDecoration>{letterDec}</LetterDecoration>
-        <ProjectDesc className="description">
-          {/* {projectDesc.map(entry => (
-            <p>{entry}</p>
-          ))} */}
-        </ProjectDesc>
-      </Wrapper>
+      <Layout>
+        <Wrapper
+          className="project-page"
+          style={{
+            position: `relative`,
+            top: `${pVert}`,
+            left: `${pHorz}`,
+            backgroundColor: `${bgColor}`,
+          }}
+          id={id}
+        >
+          <ProjectDataWrapper className="project-data">
+            <ProjectInfo>{infoSubTitle}</ProjectInfo>
+            <ProjectIndex>{projectIndex}</ProjectIndex>
+            <ProjectTitleWrap className="project-title">
+              <ProjectTitle>{projectTitle}</ProjectTitle>
+              <UnfoldBtn className="unfold"></UnfoldBtn>
+            </ProjectTitleWrap>
+          </ProjectDataWrapper>
+          <ImageGallery className="image-gallery"></ImageGallery>
+          <ScrollBox />
+          <LetterDecoration>{letterDec}</LetterDecoration>
+          <ProjectDesc className="description">
+            {/* {projectDesc.map(entry => (
+              <p>{entry}</p>
+            ))} */}
+          </ProjectDesc>
+        </Wrapper>
+      </Layout>
     </>
   )
 }
