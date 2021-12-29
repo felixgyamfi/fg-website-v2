@@ -25,6 +25,8 @@ function ProjectTemplate({
   pHorz,
   bgColor,
 }) {
+
+  console.log("log projectDesc", projectDesc)
   return (
     <>
       <Layout>
@@ -50,9 +52,9 @@ function ProjectTemplate({
           <ScrollBox />
           <LetterDecoration>{letterDec}</LetterDecoration>
           <ProjectDesc className="description">
-            {/* {projectDesc.map(entry => (
+             {projectDesc.map(entry => (
               <p>{entry}</p>
-            ))} */}
+            ))}
           </ProjectDesc>
         </Wrapper>
       </Layout>
