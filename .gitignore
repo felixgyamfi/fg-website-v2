@@ -68,3 +68,11 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 notes.md
+/.idea/.gitignore
+/.idea/encodings.xml
+/.idea/fg-website-v2.iml
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/vcs.xml
+/yarn.lock
