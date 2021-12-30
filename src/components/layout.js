@@ -5,7 +5,7 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   const [gridHeight, setGridHeight] = useState(0)
-  const [footerHeight, setFooterHeight] = useState(10) //px
+  const [footerHeight, setFooterHeight] = useState(0) //px
 
   //calculate Viewport grid height minus footer height; useEffect for access to window attribute
   useEffect(() => {
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     const gridHeight = vpHeight - footerHeight
     setGridHeight(gridHeight)
     setFooterHeight(10)
-  }, [])
+  }, [footerHeight])
 
   return (
     <>
