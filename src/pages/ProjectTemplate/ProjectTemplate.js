@@ -25,17 +25,11 @@ function ProjectTemplate({
   pHorz,
   bgColor,
 }) {
+  const renderDescription = projectDesc => {
+    if ((projectDesc ?? null) === null) return null
+    return projectDesc.map(entry => <p>{entry}</p>)
+  }
 
-  console.log("log projectDesc", projectDesc);
-  
-  const renderDescription = (projectDesc) => {
-    if((projectDesc ?? null) === null)
-      return null;
-    return projectDesc.map(entry => (
-      <p>{entry}</p>
-    ));
-  };
-  
   return (
     <>
       <Layout>
@@ -61,7 +55,7 @@ function ProjectTemplate({
           <ScrollBox />
           <LetterDecoration>{letterDec}</LetterDecoration>
           <ProjectDesc className="description">
-             {renderDescription(projectDesc)}
+            {renderDescription(projectDesc)}
           </ProjectDesc>
         </Wrapper>
       </Layout>
