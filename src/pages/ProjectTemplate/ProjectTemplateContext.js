@@ -15,7 +15,7 @@ import ScrollBox from "../../components/ScrollBox/ScrollBox"
 import { ProjectContext } from "../Projects/ProjectContext"
 import { UnfoldBtn } from "./UnfoldBtn"
 
-function ProjectTemplate({}) {
+function ProjectTemplate({ letterDec }) {
   const [pageData] = useContext(ProjectContext)
 
   const renderDescription = projectDesc => {
@@ -46,7 +46,7 @@ function ProjectTemplate({}) {
           </ProjectDataWrapper>
           <ImageGallery className="image-gallery"></ImageGallery>
           <ScrollBox />
-          <LetterDecoration>{pageData.letterDec}</LetterDecoration>
+          <LetterDecoration>{letterDec}</LetterDecoration>
           <ProjectDesc className="description">
             {renderDescription(pageData.projectDesc)}
           </ProjectDesc>

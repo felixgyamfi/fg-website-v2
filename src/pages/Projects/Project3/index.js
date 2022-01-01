@@ -13,7 +13,7 @@ const index = () => {
         infoSubTitle={data[3].infoSubTitle}
         projectIndex={data[3].projectIndex}
         projectTitle={data[3].projectTitle}
-        letterDec={data[3].projectTitle.charAt(0).toUpperCase}
+        letterDec={data[3].projectTitle.charAt(0).toUpperCase()}
         projectDesc={data[3].projectDesc}
       />
     </div>
