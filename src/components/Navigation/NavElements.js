@@ -49,6 +49,7 @@ export const MenuBtn = styled.button`
   padding: 0;
   cursor: pointer;
   font-size: 2.4rem;
+  color: unset;
 
   @media screen and (min-width: 992px) {
     transform: unset;
