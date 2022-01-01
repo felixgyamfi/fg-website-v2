@@ -21,8 +21,9 @@ export const NavLinksBG = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
   position: absolute;
   padding: 4.4rem 2.2rem;
   top: 0;
@@ -60,9 +61,9 @@ export const MenuBtn = styled.button`
 
 export const MenuBtnClose = styled(MenuBtn)`
   position: relative;
-  margin: 5rem 0 0 0;
-  left: -5rem;
-  order: -1;
+  transform: unset;
+  margin-top: auto;
+  margin-left: auto;
 
   @media screen and (min-width: 992px) {
     margin: 0;

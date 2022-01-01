@@ -20,11 +20,16 @@ function Navigation() {
 
   return (
     <Wrapper>
-      <Nav className="Nav">
-        <NavLogo></NavLogo>
-        <MenuBtn onClick={() => setHide(!hide)}>menu</MenuBtn>
+      <Nav className="navigation">
+        <NavLogo className="navigation__logo"></NavLogo>
+        <MenuBtn
+          className="navigation__menu-btn"
+          onClick={() => setHide(!hide)}
+        >
+          menu
+        </MenuBtn>
         <NavLinksBG onClick={linkHandler} className={hide ? "hide" : ""}>
-          <NavLinks>
+          <NavLinks className="navigation__links">
             <NavItems />
           </NavLinks>
           <MenuBtnClose onClick={() => setHide(!hide)}>

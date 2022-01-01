@@ -22,7 +22,7 @@ export const StyledLink = styled(CustomLink)``
 
 function NavLogo() {
   return (
-    <Logo className="nav-logo">
+    <Logo className="navigation__logo">
       <StyledLink
         pageHash={"#landingPage"}
         pageTitle="Felix Gyamfi"

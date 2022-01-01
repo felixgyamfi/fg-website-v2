@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const StyledBtn = styled.button`
   display: none;
+  color: unset;
 
   .open {
     background-color: coral;
