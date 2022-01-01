@@ -13,9 +13,15 @@ import {
 import ImageGallery from "./ProjectImageGalleryPrvw"
 import ScrollBox from "../../components/ScrollBox/ScrollBox"
 import { ProjectContext } from "../Projects/ProjectContext"
+import { UnfoldBtn } from "./UnfoldBtn"
 
 function ProjectTemplate({}) {
   const [pageData] = useContext(ProjectContext)
+
+  const renderDescription = projectDesc => {
+    if ((projectDesc ?? null) === null) return null
+    return projectDesc.map(entry => <p>{entry}</p>)
+  }
 
   return (
     <>
@@ -35,12 +41,15 @@ function ProjectTemplate({}) {
             <ProjectIndex>{pageData.projectIndex}</ProjectIndex>
             <ProjectTitleWrap className="project-title">
               <ProjectTitle>{pageData.projectTitle}</ProjectTitle>
+              <UnfoldBtn className="unfold" />
             </ProjectTitleWrap>
           </ProjectDataWrapper>
           <ImageGallery className="image-gallery"></ImageGallery>
           <ScrollBox />
           <LetterDecoration>{pageData.letterDec}</LetterDecoration>
-          <ProjectDesc className="description"></ProjectDesc>
+          <ProjectDesc className="description">
+            {renderDescription(pageData.projectDesc)}
+          </ProjectDesc>
         </Wrapper>
       </Layout>
     </>
