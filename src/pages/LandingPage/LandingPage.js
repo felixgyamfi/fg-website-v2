@@ -1,8 +1,8 @@
 import React from "react"
 import Footer from "../../components/Footer/footer"
 import Navigation from "../../components/Navigation/Nav"
-import { ArrowBtns } from "./ArrowButtons"
-import ImageStack from "./ImageStack"
+import { ArrowBtns } from "./ArrowButtons/ArrowButtons"
+import ImageStack from "./ImageStack/ImageStack"
 
 import { Wrapper, TitleWrapper, TitleText } from "./LandingPageElements"
 

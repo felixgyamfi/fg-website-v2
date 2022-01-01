@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { CustomLink } from "../../components/Links/CustomLink"
+import { CustomLink } from "../../../components/Links/CustomLink"
 
 export const ArrowButton = styled(CustomLink)`
   width: fit-content;
