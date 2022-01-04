@@ -1,5 +1,7 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+
+import feuerPic from "../../../assets/images/feuer.jpg"
+import simiPic from "../../../assets/images/simi.jpg"
 
 import {
   Stack,
@@ -13,10 +15,10 @@ function ImageStack() {
     <Container className="container">
       <Stack>
         <StackItemTop>
-          <StaticImage src="../../assets/images/Simi_1-2.jpg" alt="Simi" />
+          <img src={simiPic} alt="Simi" />
         </StackItemTop>
         <StackItemBottom>
-          <StaticImage src="../../assets/images/feuer_1.jpg" alt="Feuer" />
+          <img src={feuerPic} alt="feuer" />
         </StackItemBottom>
       </Stack>
     </Container>

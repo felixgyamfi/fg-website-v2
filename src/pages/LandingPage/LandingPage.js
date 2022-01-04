@@ -8,7 +8,7 @@ import { Wrapper, TitleWrapper, TitleText } from "./LandingPageElements"
 
 function LandingPage() {
   return (
-    <div>
+    <>
       <Navigation />
       <Wrapper id="landingPage">
         <TitleWrapper>
@@ -18,7 +18,7 @@ function LandingPage() {
         <ImageStack className="image-stack" />
       </Wrapper>
       <Footer />
-    </div>
+    </>
   )
 }
 

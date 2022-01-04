@@ -14,7 +14,7 @@ import NavLogo from "./NavLogo"
 function Navigation() {
   const [hide, setHide] = useState(true)
 
-  function linkHandler() {
+  function toggleHide() {
     setHide(true)
   }
 
@@ -28,7 +28,7 @@ function Navigation() {
         >
           menu
         </MenuBtn>
-        <NavLinksBG onClick={linkHandler} className={hide ? "hide" : ""}>
+        <NavLinksBG onClick={toggleHide} className={hide ? "hide" : ""}>
           <NavLinks className="navigation__links">
             <NavItems />
           </NavLinks>
