@@ -20,5 +20,11 @@ module.exports = {
         duration: 500,
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
   ],
 }
