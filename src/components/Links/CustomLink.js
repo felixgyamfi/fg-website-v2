@@ -7,6 +7,7 @@ const CstmLink = styled.button`
   border: none;
   padding: 0;
   cursor: pointer;
+  color: unset;
 `
 export const scrollLink = (pageHash = "") => {
   return () => scrollTo(pageHash)

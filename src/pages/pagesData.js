@@ -49,7 +49,7 @@ export const pages = [
       "Artist/Band: Buffala",
       "Singer: Robert Ildefonso | @defonso",
       "Producer: Friedrich Schulz-Pflugbeil | @freddie",
-      "Location: Städtisches Krankenhaus/Alte Kinderklinik, Kiel(Germany)",
+      "Location: Städtisches Krankenhaus/Alte Kinderklinik, Kiel (Germany)",
     ],
   },
   {

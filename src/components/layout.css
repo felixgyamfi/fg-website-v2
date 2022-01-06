@@ -26,7 +26,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
+  color: rgba(38, 36, 35, 1);
   background-color: rgba(223, 221, 217, 1);
   font-family: Aeonik, sans-serif;
   font-weight: normal;

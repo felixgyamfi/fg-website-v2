@@ -1,7 +1,5 @@
 import { pages } from "../../pages/pagesData"
 
-console.dir(pages[2].id)
-
 const attributes = [
   {
     index: 0,

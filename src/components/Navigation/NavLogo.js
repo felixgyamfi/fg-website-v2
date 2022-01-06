@@ -8,7 +8,6 @@ export const Logo = styled.h1`
   height: auto;
   font-size: 3.6rem;
   font-style: normal;
-  color: rgba(38, 36, 35, 1);
   font-weight: 500;
   margin: 3rem 3.3rem 0;
   width: fit-content;
@@ -19,13 +18,11 @@ export const Logo = styled.h1`
     margin: 3rem 6rem 0;
   }
 `
-export const StyledLink = styled(CustomLink)`
-  color: rgba(38, 36, 35, 1);
-`
+export const StyledLink = styled(CustomLink)``
 
 function NavLogo() {
   return (
-    <Logo>
+    <Logo className="navigation__logo">
       <StyledLink
         pageHash={"#landingPage"}
         pageTitle="Felix Gyamfi"

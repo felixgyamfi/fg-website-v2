@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import Layout from "../../components/layout"
 import {
   Wrapper,
@@ -12,19 +12,12 @@ import {
 } from "./ProjectTemplateElements"
 import ImageGallery from "./ProjectImageGalleryPrvw"
 import ScrollBox from "../../components/ScrollBox/ScrollBox"
+import { ProjectContext } from "../Projects/ProjectContext"
 import { UnfoldBtn } from "./UnfoldBtn"
 
-function ProjectTemplate({
-  id,
-  infoSubTitle,
-  projectIndex,
-  projectTitle,
-  letterDec,
-  projectDesc,
-  pVert,
-  pHorz,
-  bgColor,
-}) {
+function ProjectTemplate({ letterDec }) {
+  const [pageData] = useContext(ProjectContext)
+
   const renderDescription = projectDesc => {
     if ((projectDesc ?? null) === null) return null
     return projectDesc.map(entry => <p>{entry}</p>)
@@ -37,25 +30,25 @@ function ProjectTemplate({
           className="project-page"
           style={{
             position: `relative`,
-            top: `${pVert}`,
-            left: `${pHorz}`,
-            backgroundColor: `${bgColor}`,
+            top: `${pageData.pVert}`,
+            left: `${pageData.pHorz}`,
+            backgroundColor: `${pageData.bgColor}`,
           }}
-          id={id}
+          id={pageData.id}
         >
           <ProjectDataWrapper className="project-data">
-            <ProjectInfo>{infoSubTitle}</ProjectInfo>
-            <ProjectIndex>{projectIndex}</ProjectIndex>
+            <ProjectInfo>{pageData.infoSubTitle}</ProjectInfo>
+            <ProjectIndex>{pageData.projectIndex}</ProjectIndex>
             <ProjectTitleWrap className="project-title">
-              <ProjectTitle>{projectTitle}</ProjectTitle>
-              <UnfoldBtn className="unfold"></UnfoldBtn>
+              <ProjectTitle>{pageData.projectTitle}</ProjectTitle>
+              <UnfoldBtn className="unfold" />
             </ProjectTitleWrap>
           </ProjectDataWrapper>
           <ImageGallery className="image-gallery"></ImageGallery>
           <ScrollBox />
           <LetterDecoration>{letterDec}</LetterDecoration>
           <ProjectDesc className="description">
-            {renderDescription(projectDesc)}
+            {renderDescription(pageData.projectDesc)}
           </ProjectDesc>
         </Wrapper>
       </Layout>

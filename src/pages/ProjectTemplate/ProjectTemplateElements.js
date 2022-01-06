@@ -124,6 +124,7 @@ export const LetterDecoration = styled.p`
   @media screen and (min-width: 992px) {
     margin-left: auto;
     margin-right: 5%;
+    grid-area: 2/4;
     z-index: 990;
   }
 `
